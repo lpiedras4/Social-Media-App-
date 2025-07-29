@@ -1,8 +1,8 @@
 import React from 'react'
-
+import AuthLayout from '../_auth/AuthLayout'
 const RootLayout = () => {
   return (
-    <div>RootLayout</div>
+    <AuthLayout/>
   )
 }
 

@@ -6,6 +6,7 @@ import {Home} from './_root/pages';
 import SignupForm from './_auth/forms/SignupForm';
 import RootLayout from './_root/RootLayout';
 import AuthLayout from './_auth/AuthLayout';
+
 const App = () => {
   return (
     <main className='flex h-screen'> 

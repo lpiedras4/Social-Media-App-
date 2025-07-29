@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
 const SigninForm = () => {
   return (
      <form>
@@ -27,6 +27,10 @@ const SigninForm = () => {
                             <button class="w-full px-4 py-2 tracking-wide text-white transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:bg-blue-400 focus:ring focus:ring-blue-300 focus:ring-opacity-50">
                                 Sign in
                             </button>
+                        </div>
+                        <div className="text-white flex justify-between items-center mt-10">
+                            <p> Don´t have an account? </p> 
+                            <Link to="/sign-up" className ="text-blue-400 hover:text-blue-700"> Sign up</Link>
                         </div>
 
      </form>
