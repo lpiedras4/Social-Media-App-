@@ -1,8 +1,8 @@
 import React from 'react'
-import AuthLayout from '../_auth/AuthLayout'
+import { Outlet } from 'react-router-dom'
 const RootLayout = () => {
   return (
-    <AuthLayout/>
+    <Outlet/>
   )
 }
 

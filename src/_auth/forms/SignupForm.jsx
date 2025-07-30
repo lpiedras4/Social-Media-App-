@@ -110,12 +110,11 @@ const handleSubmit = async (event) =>{
                                 Create account
                             </button>
                         </div>
-                        <div className="text-white flex justify-between items-center mt-10">
-                            <p> Already have an account? </p> 
-                            <Link to="/sign-in" className ="text-blue-400 hover:text-blue-700"> Sign in</Link>
-                        </div>
-
      </form>
+     <div className="text-white flex justify-items-center mt-6 space-x-6">
+    <p> Already have an account? </p> 
+    <Link to="/sign-in" className ="text-blue-400 hover:text-blue-700"> Sign in</Link>
+    </div>
       </>
   )
 }
