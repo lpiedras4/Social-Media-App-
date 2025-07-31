@@ -1,8 +1,22 @@
 import React from 'react'
-import { Outlet } from 'react-router-dom'
+import { Outlet } from 'react-router-dom';
+import TopBar from './pages/components/TopBar';
+import LeftSidebar from './pages/components/LeftSidebar';
+import Bottombar from './pages/components/Bottombar';
 const RootLayout = () => {
+   
   return (
-    <Outlet/>
+
+    <div className='w-full md:flex bg-slate-950'> 
+      <TopBar />
+      <LeftSidebar/>
+      <section className="flex flex-1 h-full">
+        <Outlet />
+      </section>
+      <Bottombar/>
+    </div>
+    
+    
   )
 }
 

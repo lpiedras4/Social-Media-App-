@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import supabase from '../../helper/supabase.client';    
 import {Navigate} from 'react-router-dom';  
-
 function Wrapper({children}){
     const [authenticated,setAuthenticated] = useState(false);
     const [loading, setLoading] = useState(true);
@@ -18,7 +17,7 @@ function Wrapper({children}){
         getSession();
     },[]);
     if(loading){
-        return <div> Loading..</div>
+        return <div> Loading.. </div>
     }else{
         if(authenticated){
             return <> {children}</>

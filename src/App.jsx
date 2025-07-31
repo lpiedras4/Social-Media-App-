@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import {Routes, Route} from 'react-router-dom';
 import './index.css';
 import SigninForm from './_auth/forms/SigninForm';
@@ -19,13 +19,11 @@ const App = () => {
     </Route>
 
       {/*private routes*/}
-      <Route element={
-        <Wrapper> 
-          <RootLayout/>
-        </Wrapper>
-        }>
-         <Route index element={<Home/>}/>
+      <Route path="/"element={<Wrapper><RootLayout/></Wrapper>}>
+         <Route index element={<Home/>} />
       </Route>
+    
+      
     </Routes>
    
     
