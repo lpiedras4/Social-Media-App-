@@ -12,10 +12,7 @@ const SignupForm = () => {
 const handleSubmit = async (event) =>{
     event.preventDefault();
     setMessage("");
-    const {data,error} = await supabase.auth.signUp({
-        username:username,
-        name:name,
-        lastname:lastname,
+    const {data:authData,error} = await supabase.auth.signUp({
         email:email,
         password:password
     }); 
@@ -23,10 +20,29 @@ const handleSubmit = async (event) =>{
         setMessage(error.message);
         return;
     }
-    if(data){
+    if(authData?.user){
         setMessage("Your account has been created succesfully!");
+    
+        const userId =authData.user.id;
+        const {error:profileError} = await supabase 
+        .from("profiles")
+        .insert([
+            {
+            id:userId,
+            username:username,
+            name:name,
+            lastname:lastname
+        }]);
 
+            if(profileError){
+                console.log(profileError);
+                setMessage(`Account created but there was a problem saving profile info: ${profileError.message}`);
+                return;
+            }
     }
+
+
+
     setUsername("");
     setName("");
     setLastName("");
