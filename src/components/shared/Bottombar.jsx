@@ -2,7 +2,7 @@ import React from 'react'
 
 const Bottombar = () => {
   return (
-    <div>Bottombar</div>
+    <section className="bottom-bar">Bottombar</section>
   )
 }
 
