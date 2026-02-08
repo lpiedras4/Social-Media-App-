@@ -716,13 +716,13 @@
   }
   
   .shad-input::placeholder {
-    color: #5C5C7B;
+    color: #7b7a5c;
   }
   
   .shad-input:focus-visible {
     outline: 2px solid transparent;
     outline-offset: 2px;
-    box-shadow: 0 0 0 1px #7878A3;
+    box-shadow: 0 0 0 1px #a3a278;
   }
 
   .shad-textarea {
@@ -740,14 +740,14 @@
 
   /* Button */
   .shad-button_primary {
-    background-color: #877EFF;
+    background-color: #ffe17e;
     color: #FFFFFF;
     display: flex;
     gap: 0.5rem;
   }
   
   .shad-button_primary:hover {
-    background-color: #877EFF;
+    background-color: #ffe17e;
   }
 
   .shad-button_dark_4 {
