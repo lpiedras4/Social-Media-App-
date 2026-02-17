@@ -421,7 +421,8 @@
     align-items: center;
     flex: 1;
     gap: 2.5rem;
-    overflow: scroll;
+    overflow
+    : scroll;
     padding: 2.5rem 1.25rem;
   }
   
@@ -631,7 +632,8 @@
   }
   
   .leftsidebar-link:hover {
-    background-color: #877EFF;
+    background-color: #7ec3ff;
+    color: black;
   }
 
   /* Post Card */
