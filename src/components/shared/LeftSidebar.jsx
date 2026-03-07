@@ -65,7 +65,7 @@ const LeftSidebar = () => {
                 <NavLink
               to={link.route}
               className="flex gap-4 items-center p-4">
-               <link.icon className={`group-hover:invert-white ${isActive && "invert-white"}`}/>
+               <link.icon className={`group-hover:invert-white ${isActive}`}/>
                <span> {link.label} </span> 
               </NavLink>
                
